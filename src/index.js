@@ -19,6 +19,6 @@ app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 // Usamos el res.render y no el res.send, por que queremos renderizar el archivo index.ejs de la carpeta views (no es necesario añadirle la extensión .ejs)
 app.get('/', (req,res) => res.render('index'));
-
+// Listen es para que el servidor asigne un puerto y el usuario pueda ingresar al mismo
 app.listen(PUERTO);
 console.log(`Server is listening on port ${PUERTO}`);
