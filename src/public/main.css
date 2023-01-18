@@ -1,0 +1,6 @@
+/* Creamos una pagina de css para luego inportarla a un partial (head) y de esta importarla a otros archivos .ejs*/
+body {
+    background: rgb(14, 128, 52);
+    color: #ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

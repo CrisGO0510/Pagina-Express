@@ -22,6 +22,8 @@ app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 // Usamos el comando para poder usar el indexRouter
 app.use(indexRouter);
+// Le decimos a express que necesitamos usar los archivos del directorio public
+app.use(express.static(join(__dirname, 'public')));
 
 // Listen es para que el servidor asigne un puerto y el usuario pueda ingresar al mismo
 app.listen(PUERTO);
